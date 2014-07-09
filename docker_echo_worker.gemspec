@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = DockerEchoWorker::VERSION
   spec.authors       = ["Tomokazu Kiyohara"]
   spec.email         = ["tomokazu.kiyohara@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{docker echo service's worker}
+  spec.description   = %q{docker echo service's worker}
   spec.homepage      = ""
   spec.license       = "MIT"
 
