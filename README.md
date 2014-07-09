@@ -18,7 +18,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+1. Create docker image
+
+    $ docker build -t <username>/docker_echo_worker .
+
+2. Run docker container
+
+    $ docker run -p 8080:8080 <username>/docker_echo_worker
+
+3. Check API
+
+    $ curl -X GET http://localhost:8080/
+    $ curl -X GET http://localhost:8080/ping
+    $ curl -X POST -d 'data=xxx' http://localhost:8080/echo
+
 
 ## Contributing
 
