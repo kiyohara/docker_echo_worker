@@ -33,9 +33,9 @@ Or install it yourself as:
 3. Check API
 
   ```
-  $ curl -X GET http://localhost:8080/
-  $ curl -X GET http://localhost:8080/ping
-  $ curl -X POST -d 'data=xxx' http://localhost:8080/echo
+  $ curl -X GET http://<docker host>:8080/
+  $ curl -X GET http://<docker host>:8080/ping
+  $ curl -X POST -d 'data=xxx' http://<docker host>:8080/echo
   ```
 
 ## Contributing
