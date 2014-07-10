@@ -18,19 +18,31 @@ Or install it yourself as:
 
 ## Usage
 
-1. Create docker image
+1. Clone this project
 
   ```
-  $ docker build -t <username>/docker_echo_worker .
+  $ git clone https://github.com/kiyohara/docker_echo_worker.git
+  $ cd docker_echo_worker
   ```
 
-2. Run docker container
+2. Make gem pkg
 
   ```
-  $ docker run -p 8080:8080 <username>/docker_echo_worker
+  $ rake build
+  ```
+3. Create docker image
+
+  ```
+  $ docker build -t docker_echo_worker .
   ```
 
-3. Check API
+4. Run docker container
+
+  ```
+  $ docker run -p 8080:8080 docker_echo_worker
+  ```
+
+5. Check API
 
   ```
   $ curl -X GET http://<docker host>:8080/
