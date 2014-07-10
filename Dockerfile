@@ -15,3 +15,4 @@ RUN gem install --no-ri --no-rdoc /docker_echo_worker-0.0.1.gem
 
 ENTRYPOINT [ "docker_echo_worker" ]
 
+EXPOSE 8080
